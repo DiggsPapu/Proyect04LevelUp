@@ -24,8 +24,8 @@
 body {
     background: rgb(180, 8, 8);
     background: linear-gradient(
-      45deg,
-      rgba(250,100, 2, 1) 10%,
+      -225deg,
+      rgb(250, 2, 2) 10%,
       rgba(200, 242, 1) 82%
     )
   }
