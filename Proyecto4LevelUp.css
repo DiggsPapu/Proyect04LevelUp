@@ -1,31 +1,31 @@
-/* .Poke_name{
-    width:fit-content;
-    height:fit-content;
-    padding: 5px 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    color: blue;
-    text-align: center;
-} */
-.Poke_Pic{
-    width: 100px;
-    height: 100px;
-    padding: 30px, 50px;
-    /* background-image: url('https%3A%2F%2Fwww.freepik.com%2Ffree-vector%2Fgradient-dynamic-blue-lines-background_15151445.htm%23query%3Dbackground%26position%3D5%26from_view%3Dkeyword'); */
-}
-.pokemoncontainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px;
-}
 .Poke_name {
     text-transform:capitalize;
     font-weight: bold;
     font-size: 30px;
   }
+.Poke_Pic{
+    width: 100px;
+    height: 100px;
+    padding: 30px, 50px;
+   }
+.pokemoncontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px 50px;
+    padding: 50px 50px;
+    visibility:visible;
+}
 .card{
     text-align: center;
     height: 300px;
     width: 300px;
     padding: 40px 40px;
 }
+body {
+    background: rgb(180, 8, 8);
+    background: linear-gradient(
+      45deg,
+      rgba(250,100, 2, 1) 10%,
+      rgba(200, 242, 1) 82%
+    )
+  }
