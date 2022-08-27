@@ -1,4 +1,5 @@
 var container = document.getElementById('pokemon_container');
+container.classList.add('pokemoncontainer')
 var counter = 0;
 var random = 1;
 var array = [];
@@ -13,6 +14,7 @@ function searchPokemons(){
       .then(response => response.json())
       .then(data => {
           createPokemon(data); 
+          console.log(data);
       })
       appendToArray(random); 
     }
@@ -31,12 +33,19 @@ function createRandomValue(){
  * @param {json} data 
  */
 function createPokemon(data){
-  const card = document.createElement('div');
-  card.classList.add('pokemon_div');
+  const divi = document.createElement('div');
+  divi.classList.add('pokemon_div');
   const poke_name = document.createElement('p');
   poke_name.classList.add('Poke_name');
   poke_name.textContent = data.name;
-  card.appendChild(poke_name);
+  const poke_image = document.createElement('img');
+  poke_image.classList.add('Poke_Pic')
+  poke_image.setAttribute('src',data.sprites.front_shiny);
+  const card = document.createElement('div');
+  card.classList.add('card');
+  divi.appendChild(poke_name);
+  divi.appendChild(poke_image);
+  card.appendChild(divi);
   container.appendChild(card);
 }
 /**
